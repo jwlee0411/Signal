@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "991217130425",
+    "firebase_url": "https://iotcontest-e8046.firebaseio.com",
+    "project_id": "iotcontest-e8046",
+    "storage_bucket": "iotcontest-e8046.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991217130425:android:1f801f9a836f3c33",
+        "android_client_info": {
+          "package_name": "com.example.iot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991217130425-kou61f8b6i9sr5tjcgj65mvna0lrg078.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iot",
+            "certificate_hash": "d1d501fe810ee64bbbb801c41a2ef5d99732aec2"
+          }
+        },
+        {
+          "client_id": "991217130425-dg8iu2gap1hmc1vd9jehf331eoguas25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iot",
+            "certificate_hash": "42bf5fb1dc7a00d9e17a56bbffca1c018f5c9fdb"
+          }
+        },
+        {
+          "client_id": "991217130425-4i14ft7tkbpbcufeqjiofk2jfrun0323.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iot",
+            "certificate_hash": "3a9f22d270b63934adb6a81ac10010d95d035cce"
+          }
+        },
+        {
+          "client_id": "991217130425-hp1sihkndrvs486iiqmqlfc6jqu5i0bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL1j3v_Umd5iWgNq8EXxSrJ0ex7rzTwK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991217130425-hp1sihkndrvs486iiqmqlfc6jqu5i0bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

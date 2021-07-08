@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="700dp"
+    tools:context=".GasPopupActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고급 설정"
+        android:fontFamily="@font/nanumb"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"/>
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:id="@+id/gas_arc"
+        android:layout_marginTop="8dp"
+        app:arc_suffix_text=" "/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가스가 설정한 수치를 넘어서면 \n화재경보가 울립니다."
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="#000"
+            android:textSize="24dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tip_tv"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tip_tv"
+            android:id="@+id/et_setGasLim"
+            tools:hint="현재수치 : NaN"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="온도 수치를 조정합니다."
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="#000"
+            android:textSize="24dp"
+            android:id="@+id/tip_tvTemp"
+            android:layout_marginTop="8dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/tip_tvTemp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tip_tvTemp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="현재 온도 : NaN"
+                android:textColor="#000"
+                android:id="@+id/present_temp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:text="+"
+                android:id="@+id/temp_plus"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:background="#fff"
+                android:id="@+id/temp_minus"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="온도 새로고침"
+                android:background="#FFF"
+                android:textSize="10sp"
+                android:id="@+id/temp_refresh"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가스수치 영점 조절"
+            android:background="#FFF"
+            android:id="@+id/gas_zero_point"/>
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가스수치 초기화"
+            android:background="#FFF"
+            android:id="@+id/gas_reset"
+            android:layout_marginStart="8dp"/>
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/setting_cancle"
+            android:background="#FFF"
+            android:text="취소"/>
+        <Button
+            android:id="@+id/setting_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/setting_cancle"
+            android:background="#fff"
+            android:text="확인"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
